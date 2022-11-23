@@ -1,7 +1,8 @@
 import React from "react";
 
-export default function Escena () {
+export default function Escena (props) {
+    console.log(props);
     return (
-        <h3>El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial</h3>
+        <h3>{props.escena}</h3>
     );
 };
