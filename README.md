@@ -1,3 +1,11 @@
+# IT Academy - REACT
+# Srint 6. Intro React
+#
+# N1.E1 crearem un component que s'encarregarà de renderitzar una frase, i l’importarem i usarem en el component principal App.
+#
+#
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
