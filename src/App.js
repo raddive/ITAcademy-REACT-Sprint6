@@ -4,9 +4,10 @@ import data from './data';
 
 function App() {
 
-  const escenas = data.map( escena => {
+  const escenas = data.map( (escena,index) => {
       return (
         <Escena 
+          key = {index}
           escena = {escena}
         />
       );
