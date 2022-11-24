@@ -4,7 +4,7 @@
 # N1.E1 crearem un component que s'encarregarà de renderitzar una frase, i l’importarem i usarem en el component principal App.
 #
 # N1.E2 farem que es mostrin totes les frases de la història. 
-# N1.E2 mejoras en el código
+# N1.E2-1 mejoras en el código
 #
 # N1.E3 aplicar estils al nostre component Escena. Has de maquetar aquest component utilitzant styled-components:
 

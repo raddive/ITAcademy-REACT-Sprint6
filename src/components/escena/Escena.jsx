@@ -1,8 +1,9 @@
 import React from "react";
+import { H3_border} from "../../styled";
 
 export default function Escena (props) {
     // console.log(props);
     return (
-        <h3>{props.escena}</h3>
-    );
+        <H3_border>{props.escena}</H3_border>
+    ); 
 };
