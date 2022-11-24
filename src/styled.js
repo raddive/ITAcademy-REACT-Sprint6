@@ -8,11 +8,3 @@ export const H3Border = styled.h3`
   padding :5pt;
   background-color: ${props => (props.activo===props.current ? 'pink' : 'white')};
 `;
-
-export const Btn50 =styled.button `
-    font-size: 2em;
-    width: 50%;
-    background-color : lightgrey;
-    padding : 30px;
-`;
-

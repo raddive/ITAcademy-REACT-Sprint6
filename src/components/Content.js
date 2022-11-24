@@ -1,14 +1,12 @@
 import {React, useEffect, useState} from 'react';
 import Escena from './Escena';
-import data from './data';
-import { Btn50 } from './styled';
+import data from '../data';
 
 export default function Content ()
 {
 //STATES
 //JS //let variable = "Hola"
 const [iActivo,setActivo] = useState(0);
-
 
 //USE EFFECTS
 //JS window.addEventListener('load', (event) => ()
@@ -56,7 +54,7 @@ useEffect( () =>
 //RENDER
   return (
     <div>
-       <Btn50 onClick={() => navBtn(-1)}>ANTERIOR</Btn50><Btn50 onClick={() => navBtn(1)}>SIGUIENTE</Btn50>
+       <button className='btn_50' onClick={() => navBtn(-1)}>ANTERIOR</button><button className='btn_50' onClick={() => navBtn(1)}>SIGUIENTE</button >
       {escenas}
     </div>
   );

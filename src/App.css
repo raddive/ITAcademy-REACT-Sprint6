@@ -37,12 +37,22 @@
   }
 }
 
-.content_div {
+
+/* /////////////////////////////////////////////////////// */
+
+.btn_50 {
+  font-size: 2em;
+  width: 50%;
+  background-color : lightgrey;
+  padding : 30px;
+}
+
+.landing_div {
   font-size: 20pt;
   text-align: center;
 }
 
-.content_div > button {
+.landing_div > button {
   font-size: 20pt;
   padding: 20px;
 }

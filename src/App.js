@@ -1,15 +1,14 @@
 import {React, useEffect, useState} from 'react';
 import './App.css';
-import Escena from './components/Escena';
-import data from './data';
-import { Btn50 } from './styled';
+import Landing from './components/Landing';
+import Content from './components/Content';
 
 
 function App() {
 
 //STATES
 //JS //let variable = "Hola"
-  const [iActivo,setActivo] = useState(0);
+  const [bShowStart,setShowStart] = useState(true);
 
 
 //USE EFFECTS
@@ -18,7 +17,7 @@ function App() {
     {
 
     }
-    , [iActivo]);
+    , [bShowStart]);
 
   //Como está vacio, en PPO solo se llama al cargarq
   useEffect( () => 
@@ -28,39 +27,22 @@ function App() {
     },[]);
 
 //LOGICA
-  const navBtn = (iDir) => 
-  {
-      if(iDir === -1 && iActivo>0)
-      {
-        setActivo(iActivo-1);
-      }
-      else if (iDir === 1 && iActivo<escenas.length-1)
-      {
-        setActivo(iActivo+1);
-      }
-  };
-
-
-//MAPPING  
-  const escenas = data.map( (escena,index) => {
-      return (
-        <div>
-          <Escena 
-              key = {index}
-              escena = {escena}
-              activo = {iActivo}
-              current = {index}
-            />   
-        </div>
-      );
-  });
   
 
 //RENDER
   return (
     <div>
-       <Btn50 onClick={() => navBtn(-1)}>ANTERIOR</Btn50><Btn50 onClick={() => navBtn(1)}>SIGUIENTE</Btn50>
-      {escenas}
+      {bShowStart && (
+        <div>
+          <Landing 
+            setShowStart = {setShowStart}/>
+        </div>
+      )}
+      {!bShowStart && (
+        <div>
+          <Content />
+        </div>
+      )}
     </div>
   );
 }
