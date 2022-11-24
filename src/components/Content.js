@@ -1,31 +1,29 @@
 import {React, useEffect, useState} from 'react';
-import './App.css';
-import Escena from './components/Escena';
+import Escena from './Escena';
 import data from './data';
 import { Btn50 } from './styled';
 
-
-function App() {
-
+export default function Content ()
+{
 //STATES
 //JS //let variable = "Hola"
-  const [iActivo,setActivo] = useState(0);
+const [iActivo,setActivo] = useState(0);
 
 
 //USE EFFECTS
 //JS window.addEventListener('load', (event) => ()
-  useEffect(() => 
-    {
+useEffect(() => 
+  {
 
-    }
-    , [iActivo]);
+  }
+  , [iActivo]);
 
-  //Como está vacio, en PPO solo se llama al cargarq
-  useEffect( () => 
-    {
-      //llamada a un API para recargar datos por ejemplo!!!!
-    
-    },[]);
+//Como está vacio, en PPO solo se llama al cargarq
+useEffect( () => 
+  {
+    //llamada a un API para recargar datos por ejemplo!!!!
+  
+  },[]);
 
 //LOGICA
   const navBtn = (iDir) => 
@@ -39,7 +37,6 @@ function App() {
         setActivo(iActivo+1);
       }
   };
-
 
 //MAPPING  
   const escenas = data.map( (escena,index) => {
@@ -64,5 +61,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

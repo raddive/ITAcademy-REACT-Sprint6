@@ -10,7 +10,10 @@
 #
 # N1.E4 Mostrarem totes les línies de l’aplicació, però ressaltarem només una de cada vegada, que anirà canviant a mesura que premem els botons d’avançar o retrocedir:
 #
+# N2.E5 mostrar a l'usuari/ària una pantalla inicial de benvinguda, que contingui la descripció del projecte i un botó de començar.
 #
+#
+
 
 # Getting Started with Create React App
 

@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.content_div {
+  font-size: 20pt;
+  text-align: center;
+}
+
+.content_div > button {
+  font-size: 20pt;
+  padding: 20px;
+}
+
+

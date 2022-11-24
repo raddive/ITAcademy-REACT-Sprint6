@@ -1,5 +1,5 @@
 import React from "react";
-import { H3Border} from "../../styled";
+import { H3Border} from "../styled";
 
 
 export default function Escena (props) {
