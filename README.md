@@ -7,7 +7,10 @@
 # N1.E2-1 mejoras en el código
 #
 # N1.E3 aplicar estils al nostre component Escena. Has de maquetar aquest component utilitzant styled-components:
-
+#
+# N1.E4 Mostrarem totes les línies de l’aplicació, però ressaltarem només una de cada vegada, que anirà canviant a mesura que premem els botons d’avançar o retrocedir:
+#
+#
 
 # Getting Started with Create React App
 

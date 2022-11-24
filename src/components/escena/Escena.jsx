@@ -1,9 +1,14 @@
 import React from "react";
-import { H3_border} from "../../styled";
+import { H3Border} from "../../styled";
+
 
 export default function Escena (props) {
-    // console.log(props);
     return (
-        <H3_border>{props.escena}</H3_border>
+        <H3Border 
+            activo={props.activo}
+            current = {props.current}>
+                {props.escena}
+        </H3Border>
     ); 
+
 };
