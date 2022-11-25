@@ -12,7 +12,10 @@
 #
 # N2.E5 mostrar a l'usuari/ària una pantalla inicial de benvinguda, que contingui la descripció del projecte i un botó de començar.
 #
+# N3.E6 modificar la imatge de fons segons l'usuari/ària vagi canviant de frase. 
 #
+#
+
 
 
 # Getting Started with Create React App

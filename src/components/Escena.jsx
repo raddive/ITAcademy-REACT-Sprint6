@@ -7,7 +7,7 @@ export default function Escena (props) {
         <H3Border 
             activo={props.activo}
             current = {props.current}>
-                {props.escena}
+                {props.txt}
         </H3Border>
     ); 
 
